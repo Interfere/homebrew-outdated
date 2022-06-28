@@ -10,6 +10,11 @@ class Utica < Formula
 
   depends_on xcode: ["12.0", :build]
 
+  bottle do
+    root_url "https://github.com/Interfere/Utica/releases/download/0.40.1"
+    sha256 cellar: :any_skip_relocation, arm64_monterey:                          "2fd2d283c5a2391c5ef0af48924d6aa33222bfebd4b43d3c215104e105840015"
+  end
+
   def install
     system "make", "prefix_install", "PREFIX=#{prefix}"
     bin.install ".build/release/utica"
