@@ -13,6 +13,7 @@ class Utica < Formula
   bottle do
     root_url "https://github.com/Interfere/Utica/releases/download/0.40.1"
     sha256 cellar: :any_skip_relocation, arm64_monterey:                          "2fd2d283c5a2391c5ef0af48924d6aa33222bfebd4b43d3c215104e105840015"
+    sha256 cellar: :any_skip_relocation, monterey:                                "8126368010df2dfcc31411330319a6d1a46019000f326fbb538e779a32e55acd"
   end
 
   def install
