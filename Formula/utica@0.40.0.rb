@@ -6,8 +6,9 @@ class UticaAT0400 < Formula
       revision: "1fc1fba5a4d34117b423d475f594ea433b8efd70",
       shallow:  false
   license "MIT"
-  head "https://github.com/Interfere/Utica.git", shallow: false
-
+  head "https://github.com/Interfere/Utica.git",
+      branch:  "master",
+      shallow: false
   bottle do
     root_url "https://github.com/Interfere/Utica/releases/download/0.40.0-pre"
     sha256 cellar: :any_skip_relocation, arm64_monterey:                          "dc44b4c000e306907996935e2c8a258b8bf2c85eaeb865c0938e880c1ec51a81"

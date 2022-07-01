@@ -6,7 +6,9 @@ class Utica < Formula
       revision: "a39075121928d8ad3ecce6fe0d7c895ac361cd1b",
       shallow:  false
   license "MIT"
-  head "https://github.com/Interfere/Utica.git", shallow: false
+  head "https://github.com/Interfere/Utica.git",
+      branch:  "master",
+      shallow: false
 
   bottle do
     root_url "https://github.com/Interfere/Utica/releases/download/0.40.1"
