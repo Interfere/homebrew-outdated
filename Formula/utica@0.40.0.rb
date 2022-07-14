@@ -1,19 +1,18 @@
-class Utica < Formula
+class UticaAT0400 < Formula
   desc "Decentralized dependency manager for Cocoa"
   homepage "https://github.com/Interfere/Utica"
   url "https://github.com/Interfere/Utica.git",
-      tag:      "0.40.1",
-      revision: "a39075121928d8ad3ecce6fe0d7c895ac361cd1b",
+      tag:      "0.40.0-pre",
+      revision: "1fc1fba5a4d34117b423d475f594ea433b8efd70",
       shallow:  false
   license "MIT"
   head "https://github.com/Interfere/Utica.git",
       branch:  "master",
       shallow: false
-
   bottle do
-    root_url "https://github.com/Interfere/Utica/releases/download/0.40.1"
-    sha256 cellar: :any_skip_relocation, arm64_monterey:                          "2fd2d283c5a2391c5ef0af48924d6aa33222bfebd4b43d3c215104e105840015"
-    sha256 cellar: :any_skip_relocation, monterey:                                "8126368010df2dfcc31411330319a6d1a46019000f326fbb538e779a32e55acd"
+    root_url "https://github.com/Interfere/Utica/releases/download/0.40.0-pre"
+    sha256 cellar: :any_skip_relocation, arm64_monterey:                          "dc44b4c000e306907996935e2c8a258b8bf2c85eaeb865c0938e880c1ec51a81"
+    sha256 cellar: :any_skip_relocation, monterey:                                "8c113b2808abd09274f4ce21f880fa185dd054551e174e493fce2d94b495b1b4"
   end
 
   depends_on xcode: ["12.0", :build]
